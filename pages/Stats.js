@@ -1,10 +1,13 @@
-import Card from "./Card";
+import { getInitialProps } from 'next'
 
-export default function Stats() {
+import Card from "../components/Card";
+
+function Stats(props) {
   return (
     <>
+   
       <div className="container">
-        <Card color="#0366D6" title="Cases" number="10,000,00">
+        <Card color="#0366D6" title="Hi" number="10,000,00">
           1
         </Card>
         <Card color="#28A745" title="Recovered">
@@ -26,3 +29,7 @@ export default function Stats() {
     </>
   );
 }
+
+
+
+ export default Stats;

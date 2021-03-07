@@ -4,13 +4,13 @@ export default function Card(props) {
       <div className="wrapper container">
         <div className="innerWrapper">
           <span>{props.title}</span>
-          <span>{props.number}</span>
+          <span className="number">{props.number}</span>
         </div>
       </div>
       <style jsx>{`
         .wrapper {
           background-color: #21262d;
-          padding: 2em;
+          padding: 1.4em;
           border-radius: 0.6em;
         }
         .container {
@@ -24,6 +24,12 @@ export default function Card(props) {
         }
         .innerWrapper {
           display: flex;
+          flex-direction: column;
+        }
+        .number {
+            font-size: 1.6em;
+            font-weight: 700;
+            letter-spacing: 0.08em;
         }
       `}</style>
     </>
