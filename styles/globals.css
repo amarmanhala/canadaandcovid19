@@ -1,16 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --backgroundColor: #0F1218;
+  --textColor: #c9d1d9;
+  --textDarkColor: #8b949e;
+  --orange: #DA3733;
+}
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+main {
+  max-width: 75rem;
+  margin: 0 auto;
 }
-
-* {
-  box-sizing: border-box;
+h1 {
+  font: inherit;
+  font-size: 2em;
+  font-weight: 600;
 }
