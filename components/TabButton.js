@@ -1,10 +1,8 @@
-export default function TabButton({label}) {
-    const action = province => {
-        console.log(province);
-    }
+export default function TabButton({label, action}) {
+   
     return (
         <>
-        <button onClick={() => action(label)}>{label}</button>
+        <button onClick={action}>{label}</button>
         <style jsx>{`
         button {
             background-color: var(--orange);
